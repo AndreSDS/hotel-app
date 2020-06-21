@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import defaultImg from "../images/room-1.jpg";
+import defaultImg from "../images/room-1.jpeg";
 
 const StyledHero = styled.header`
   min-height: 60vh;
-  background: utl(${defaultImg}) center/cover no-reapeat;
+  background: url(${props => props.img? props.img : defaultImg}) center no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
