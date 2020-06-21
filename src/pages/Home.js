@@ -4,6 +4,10 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import Services from "../components/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
+<<<<<<< HEAD
+=======
+import StyledHero from "../components/StyledHero";
+>>>>>>> 5e4bd2625be605e3260e2790c57f4ebed864c687
 
 export default function Home() {
   return (
@@ -20,6 +24,10 @@ export default function Home() {
       </Hero>
       <Services />
       <FeaturedRooms />
+<<<<<<< HEAD
+=======
+      <StyledHero />
+>>>>>>> 5e4bd2625be605e3260e2790c57f4ebed864c687
     </>
   );
 }

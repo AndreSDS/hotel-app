@@ -10,18 +10,47 @@ class SingleRoom extends Component {
     super(props);
     this.state = {
       slug: this.props.match.params.slug,
-      defaultBcg: this.props.
+      defaultBcg: defaultBcg
     };
   }
 
   static contextType = RoomContext;
 
-  componentDidMount() {}
-
   render() {
-    const {getRoom} = this.context;
+    const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
-    return <div></div>;
+    if (!room) {
+      return (
+        <div className="error">
+          <h3>no such room could de found...</h3>
+          <Link to="/rooms" className="btn-primary">
+            back to rooms
+          </Link>
+        </div>
+      );
+    }
+
+    const {
+      name,
+      description,
+      capacity,
+      size,
+      price,
+      extras,
+      breackfast,
+      pets,
+      images
+    } = room;
+
+    return (
+      <Hero hero="roomsHero">
+        <Banner title={`${name} room`}>
+          <Link to="/rooms" className="btn-primary">
+            back to rooms
+          </Link>
+        </Banner>
+      </Hero>
+    );
   }
 }
 
