@@ -449,6 +449,13 @@ h6 {
 }
 
 @media screen and (max-width: 775px){
+  .single-room-images,
+  .single-room-info,
+  .room-extras {
+    width: 95vw;
+    max-width: 992px;
+  }
+  
   .single-room-images{
     margin: 0 auto;
     padding: 2em;
