@@ -28,7 +28,7 @@ class RoomProvider extends Component {
     try {
       let response = await Client.getEntries({
         content_type: "hotelRoomData",
-        order: "fields.price"
+        order: "fields.capacity"
       });
       let rooms = this.formatData(response.items);
       let featuredRooms = rooms.filter((room) => room.featured === true);
