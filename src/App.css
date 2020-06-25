@@ -448,6 +448,20 @@ h6 {
   grid-column-gap: 30px;
 }
 
+@media screen and (max-width: 775px){
+  .single-room-images{
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+  .single-room-images img{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+  }
+}
+
 @media screen and (min-width: 776px) {
   .roomslist-center {
     width: 90vw;
