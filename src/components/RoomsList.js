@@ -14,7 +14,7 @@ function RoomsList({rooms}) {
             <div className="roomslist-center">
                 {
                     rooms.map(item => {
-                        return <Room key={rooms.id} room={item} />;
+                        return <Room key={item.id} room={item} />;
                     })
                 }
             </div>
