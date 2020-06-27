@@ -1,3 +1,6 @@
+# Preview do projeto
+Publicado no netlify : [app-hotel](https://asdshotel.netlify.app).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
